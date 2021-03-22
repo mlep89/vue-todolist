@@ -13,6 +13,10 @@ var root = new Vue({
             this.newarray.push(this.todo);
             this.todo= '';
             console.log(this.newarray);
+        },
+        deleteToDo(index){
+            console.log(index);
+            this.newarray.splice(index, 1);
         }
     }
 })

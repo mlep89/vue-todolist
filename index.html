@@ -21,9 +21,10 @@
             <button class="btn_style" @click="addToDo">Aggiungi</button>
         </div>
         <div class="ul_container">
-            <ul>
-                <li v-for="things in newarray">{{things}} <i class="fas fa-times text-right"></i></li>
+            <ul v-if="newarray.length > 0">
+                <li v-for="(things, index) in newarray">{{things}} <i @click="deleteToDo(index)" class="fas fa-times text-right"></i></li>
             </ul>
+            <h2 v-else>Sono quasi bravo come Isina</h2>
         </div>
     </main>
 
