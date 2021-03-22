@@ -2,11 +2,10 @@ var root = new Vue({
     el: '#root',
     data: {
       todo: '',
-      title: "Boolean",
       newarray: [
-          'pippo',
-          'pluto',
-          'paperino'
+          'Fare i compiti',
+          'Fare la spesa',
+          'Fare il bucato'
       ]
     },
     methods: {

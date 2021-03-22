@@ -1,3 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 main {
     padding: 30px;
+}
+
+header {
+    padding-top: 20px;
+}
+header > img {
+    max-width: 300px;
+} 
+
+.input_container {
+    padding-bottom: 30px;
+}
+.input_style {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.btn_style {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: #efefef;
+}
+
+.ul_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7f7;
+    border-radius: 10px;
+
+}
+ul {
+    list-style: none;
+    padding-top: 30px;
+}
+ul li {
+    border-bottom: 1px solid grey;
+    padding: 5px;
 }

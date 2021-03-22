@@ -13,17 +13,16 @@
 <body>
     <div id="root">
     <header class="text-center">
-        <h1>{{title}}</h1>
-        <img src="" alt="Boolean logo">
+        <img src="https://www.boolean.careers/images/misc/logo.png" alt="Boolean logo">
     </header>
-    <main class="text-center">
-        <div>
-            <input v-model="todo">
-            <button @click="addToDo">Aggiungi</button>
+    <main>
+        <div class="input_container text-center">
+            <input class="input_style" v-model="todo">
+            <button class="btn_style" @click="addToDo">Aggiungi</button>
         </div>
-        <div>
+        <div class="ul_container">
             <ul>
-                <li v-for="things in newarray">{{things}}</li>
+                <li v-for="things in newarray">{{things}} <i class="fas fa-times text-right"></i></li>
             </ul>
         </div>
     </main>
